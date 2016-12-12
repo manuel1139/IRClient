@@ -1,0 +1,28 @@
+STEP 5
+
+Add user level functions to user.h and user.c.  User level functions are
+functions that initialize I/O, initialize user peripherals like the ADC,
+compute user algorithms, perform calculations on sampled user data, and so on.
+User function prototypes and macros may be placed in user.h, and user
+functions themselves may go in user.c
+
+STEP 6
+
+Add code to main.c on the line that says <INSERT USER APPLICATION CODE HERE>.
+For example, here you would call functions in user.c or system.c, or possibly
+setup your own state machine or primary code loop.
+
+Global variables may be added to main.c as well.  As a general practice, macros
+and prototypes may go in header files, but variable declarations should not
+go in .h files.  Variable declarations should be placed in .c files.
+
+STEP 7
+
+Design the rest of your application.  Add new files to the application, and
+test the finished product.
+
+STEP 8
+
+Document what the project does and include other project information in
+project_information.txt.
+
